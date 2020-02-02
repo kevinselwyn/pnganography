@@ -1,8 +1,8 @@
-#pnganography
+# pnganography
 
 PNG image steganography utility
 
-##Usage
+## Usage
 
 ```bash
 Usage: pnganography encode|decode <key.png> <secret> <output>
@@ -12,7 +12,7 @@ For encoding, the 4th argument (&lt;secret&gt;) should be the data that you wish
 
 For decoding, the argument should be the image with the embedded data
 
-##Info
+## Info
 
 This program functions by splitting the input file into bits and placing them, one by one, in the least-significant bit of every RGB color value in a PNG. The following functions can help you determine how large your input and PNGs should be:
 
@@ -23,13 +23,13 @@ maximum_size_of_input_in_bytes = (image_pixels * 3) / 8
 
 Note: This applies only for RGB PNGs. For grayscale, replace the 3s with 1s
 
-##Compiling
+## Compiling
 
 ```bash
 make && sudo make install
 ```
 
-##Testing
+## Testing
 
 ```bash
 make test
@@ -37,7 +37,7 @@ make test
 
 Note: You make specify your own hashing function in the Makefile. It is used to compare the input and output.
 
-##Pronunciation
+## Pronunciation
 
 Just so there is no GIF/JIF-like confusion, this program is pronounced:
 
